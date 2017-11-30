@@ -11,7 +11,7 @@ return [
     /**
      * The application name.
      */
-    'name' => 'dobee',
+    'name' => 'fastd-server',
 
     /**
      * Application logger path

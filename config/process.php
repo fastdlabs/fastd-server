@@ -8,10 +8,10 @@
  */
 
 return [
-    'demo' => [
-        'process' => \Processor\DemoProcessor::class,
+    'heartbeat' => [
+        'process' => \Process\HeartBeat::class,
         'options' => [
-            'foo' => 'bar',
+
         ],
     ],
 ];

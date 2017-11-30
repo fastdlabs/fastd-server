@@ -1,5 +1,5 @@
 {
-    "name": "fastd/dobee",
+    "name": "fastd/fastd-server",
     "type": "project",
     "license": "MIT",
     "minimum-stability": "stable",

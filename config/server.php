@@ -8,19 +8,16 @@
  */
 
 return [
-    'host' => 'ws://'.get_local_ip().':9527',
-    'class' => \FastD\Servitization\Server\WebSocketServer::class,
+    'host' => '0.0.0.0:9999',
+    'class' => \FastD\Servitization\Server\HTTPServer::class,
     'options' => [
-        'user' => 'nobody',
-        'group' => 'nogroup',
         'pid_file' => __DIR__ . '/../runtime/pid/' . app()->getName() . '.pid',
-        'log_file' => __DIR__ . '/../runtime/logs/' . app()->getName() . '.pid',
         'log_level' => 5,
         'worker_num' => 10,
         'task_worker_num' => 20,
     ],
     'processes' => [
-
+        \Process\HeartBeat::class
     ],
     'listeners' => [
 
