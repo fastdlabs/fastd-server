@@ -17,7 +17,8 @@ return [
         'task_worker_num' => 20,
     ],
     'processes' => [
-        \Process\HeartBeat::class
+        // 添加发现服务提供器
+        \FastD\RegistryProvider\Process\RegisterProcess::class,
     ],
     'listeners' => [
 

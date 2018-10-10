@@ -10,12 +10,16 @@
             "email": "bboyjanhuang@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:fastdlabs/register-provider.git"
+        }
+    ],
     "require": {
         "php": ">=5.6",
-        "fastd/fastd": "^3.2@beta",
-        "fastd/migration": "^0.1@beta",
-        "fastd/swoole": "^2.2@beta",
-        "fastd/query-builder": "^2.0@beta"
+        "fastd/fastd": "^3.2",
+        "fastd/registry-provider":"dev-master"
     },
     "require-dev": {
         "phpunit/dbunit": "^2.0"
